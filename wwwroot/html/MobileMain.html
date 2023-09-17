@@ -163,12 +163,12 @@
 <body>
 
 <div class="wrapper">
-    <button id="today" class="btn1" onclick="location.href = '/today'">Today</button>
+    <button id="today" class="btn1" onclick="location.href = '/day'">Today</button>
     <div id="gn" class="groupNumber" onclick="{
         document.getElementById('menu').classList.toggle('menu-active');
         wipeGroupNumber();
     }"><span id="groupNumber"></span></div>
-    <button id="schedule" class="btn2" onclick="location.href = '/schedule'">Schedule</button>
+    <button id="schedule" class="btn2" onclick="location.href = '/timetable'">Schedule</button>
     <div id="menu" class="menu">
         <div style="display: none" id="blur" class="blur">
            <h1 id="error" style="color: red; display: none" >Invalid parameters</h1> 
@@ -200,11 +200,11 @@
 </body>
 <script src="js/functions.js" ></script>
 <script>
-document.getElementById("groupNumber").innerText = " " + document.cookie.split("=")[1];
+document.getElementById("groupNumber").innerText = getHolder();
 
 let groupNumber;
 function wipeGroupNumber(){
-    groupNumber = getHolder();
+    groupNumber = getHolder().split("-");
     setCourse(groupNumber);
     document.getElementById("number").value = groupNumber[1];
 }

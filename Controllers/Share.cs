@@ -15,7 +15,7 @@ public class Share : Controller
     
     
     [HttpGet]
-    [Route("/share/group/{number}/timetable")]
+    [Route("/share/group/{number}")]
     public async Task Group(string number)
     {
         if (await _checker.CheckHolder(number))
@@ -41,7 +41,7 @@ public class Share : Controller
     }
     
     [HttpGet]
-    [Route("/share/teacher/{name}/timetable")]
+    [Route("/share/teacher/{name}")]
     public async Task Teacher(string name)
     {
         if (await _checker.CheckHolder(name))

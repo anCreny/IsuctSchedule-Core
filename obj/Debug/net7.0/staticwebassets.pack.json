@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets/html/MobileMain.html"
     },
     {
-      "Id": "/home/creny/IsuctSchedule/IsuctSchedule-Core/wwwroot/html/groupChoosing.html",
-      "PackagePath": "staticwebassets/html/groupChoosing.html"
-    },
-    {
       "Id": "/home/creny/IsuctSchedule/IsuctSchedule-Core/wwwroot/html/index.html",
       "PackagePath": "staticwebassets/html/index.html"
     },

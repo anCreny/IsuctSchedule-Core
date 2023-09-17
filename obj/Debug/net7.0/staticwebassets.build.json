@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rAPr+y0cJX7zfm/ES/x9FOQmdy2EzATYk46yVgDC7c8=",
+  "Hash": "d+9jCdMy3UE/HBH4SMV9LBa3z1BOQKlXldQWCjc+hj8=",
   "Source": "IsuctSchedule-Core",
   "BasePath": "_content/IsuctSchedule-Core",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
-    },
-    {
-      "Identity": "/home/creny/IsuctSchedule/IsuctSchedule-Core/wwwroot/html/groupChoosing.html",
-      "SourceId": "IsuctSchedule-Core",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/creny/IsuctSchedule/IsuctSchedule-Core/wwwroot/",
-      "BasePath": "_content/IsuctSchedule-Core",
-      "RelativePath": "html/groupChoosing.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/html/groupChoosing.html"
     },
     {
       "Identity": "/home/creny/IsuctSchedule/IsuctSchedule-Core/wwwroot/html/index.html",
