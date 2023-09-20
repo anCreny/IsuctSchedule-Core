@@ -55,7 +55,7 @@ public class HolderChecker
         return result;
     }
 
-    private async Task<bool> CheckTeacher(string teacherName)
+    public async Task<bool> CheckTeacher(string teacherName)
     {
         var client = new HttpClient();
         var resp = await client.GetAsync($"{_cacheAddr}/api/check/teacher/{teacherName}");
@@ -63,7 +63,7 @@ public class HolderChecker
         return resp.StatusCode == HttpStatusCode.OK;
     }
 
-    private async Task<bool> CheckGroup(string groupNumber)
+    public async Task<bool> CheckGroup(string groupNumber)
     {
         var client = new HttpClient();
         var resp = await client.GetAsync($"{_cacheAddr}/api/check/group/{groupNumber}");

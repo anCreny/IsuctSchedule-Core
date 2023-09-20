@@ -18,7 +18,7 @@ public class Share : Controller
     [Route("/share/group/{number}")]
     public async Task Group(string number)
     {
-        if (await _checker.CheckHolder(number))
+        if (await _checker.CheckGroup(number))
         {
             await HttpContext.Response.SendFileAsync("wwwroot/html/share/timetable_share.html");
             return;
@@ -31,7 +31,7 @@ public class Share : Controller
     [Route("/share/group/{number}/day")]
     public async Task GroupDay(string number)
     {
-        if (await _checker.CheckHolder(number))
+        if (await _checker.CheckGroup(number))
         {
             await HttpContext.Response.SendFileAsync("wwwroot/html/share/today_share.html");
             return;
@@ -44,7 +44,7 @@ public class Share : Controller
     [Route("/share/teacher/{name}")]
     public async Task Teacher(string name)
     {
-        if (await _checker.CheckHolder(name))
+        if (await _checker.CheckTeacher(name))
         {
             await HttpContext.Response.SendFileAsync("wwwroot/html/share/timetable_share.html");
             return;
@@ -57,7 +57,7 @@ public class Share : Controller
     [Route("/share/teacher/{name}/day")]
     public async Task TeacherDay(string name)
     {
-        if (await _checker.CheckHolder(name))
+        if (await _checker.CheckTeacher(name))
         {
             await HttpContext.Response.SendFileAsync("wwwroot/html/share/today_share.html");
             return;
