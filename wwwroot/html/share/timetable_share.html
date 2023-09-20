@@ -71,6 +71,10 @@
         let type = path[2]
         let holder = path[3]
 
+        if (type === "teacher") {
+            holder = decodeURIComponent(holder)
+        }
+        
         h.innerText = holder
         
         let requestURL;
