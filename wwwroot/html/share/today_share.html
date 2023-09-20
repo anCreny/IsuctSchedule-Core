@@ -81,7 +81,11 @@
 
                 let type = path[2]
                 let holder = path[3]
-
+                
+                if (type === "teacher") {
+                    holder = decodeURIComponent(holder)
+                }
+                
                 let h = document.getElementById("holder")
                 h.innerText = holder
                 
